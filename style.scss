@@ -43,13 +43,7 @@ h1 {
   }
 }
 h2 {
-    font-size: 1.6em;
-}
-.latest h2 {
-    font-weight: 300;
-    font-size: 1em;
-    margin: 0;
-    color: #fff;
+    font-size: 2em;
 }
 h3 {
     font-size: 1.2em;
@@ -118,7 +112,6 @@ img {
 }
 .wrapper-highlight {
     background: #4fd5d6;
-    font-weight: 300;
 }
 .container {
     margin: 0 auto;
@@ -221,7 +214,7 @@ nav {
 .features {
     margin: 0 auto;
     padding-top: 5em;
-    width: 80%;
+    width: 100%;
 }
 .pricing {
     margin: 0 auto;
@@ -249,8 +242,8 @@ nav {
     color: #fff;
 }
 .threecolumn {
-    padding: 0 1em 0 3.8em;
-    width: 33.3%;
+    padding: 0;
+    width: 80%;
     float: left;
     
     @include mobile {
@@ -259,14 +252,26 @@ nav {
         width: 100%;
     }
 }
-.easyicon {
-    background: url(./images/easyicon.svg) top left no-repeat;
+.easy {
+    margin: 0 auto;
+    padding: 100px 424px 0 0;
+    width: 70%;
+    background: url(./images/mockpage.svg) bottom right no-repeat;
+    height: 411px;
 }
-.secureicon {
-    background: url(./images/secureicon.svg) top left no-repeat;
+.affordable {
+    margin: 0 auto;
+    padding: 100px 0 0 424px;
+    width: 70%;
+    background: #4fd5d6 url(./images/mockpage.svg) bottom left no-repeat;
+    height: 411px;
 }
-.flexibleicon {
-    background: url(./images/flexibleicon.svg) top left no-repeat;
+.scalable {
+    margin: 0 auto;
+    padding: 100px 424px 0 0;
+    width: 70%;
+    background: url(./images/mockpage.svg) bottom right no-repeat;
+    height: 411px;
 }
 .fourcolumn {
     background: #00CBCC;
