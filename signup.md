@@ -31,6 +31,7 @@ We can get you up and running with your own data store in under 48 hours. Just c
 </select>
     <label for="paymentmethod">Payment Method</label>
     <select name="paymentmethod">
+  <option value="notapplicable">Not Applicable</option>
   <option value="cardmonthly">Card/Monthly</option>
   <option value="cardannual">Card/Annual</option>
   <option value="purchaseorder">Purchase Order</option>
