@@ -16,12 +16,6 @@ We can get you up and running with your own data store in under 48 hours. Just c
     <input type="text" name="organisation">
     <label for="_replyto">Email</label>
     <input type="email" name="_replyto">
-    <label for="username">Preferred Username</label>
-    <input type="text" name="username">
-        <label for="subdomain">Preferred Sudomain (Mid Price Plan). e.g. you.thedata.place</label>
-    <input type="text" name="subdomain">
-            <label for="domain">Your Domain (Heavy Price Plan). You must already own this.</label>
-    <input type="text" name="domain">
     <label for="priceplan">Price Plan</label>
     <select name="priceplan">
   <option value="free">Free</option>
@@ -29,6 +23,10 @@ We can get you up and running with your own data store in under 48 hours. Just c
   <option value="mid">Mid</option>
   <option value="heavy">Heavy</option>
 </select>
+        <label for="subdomain">Preferred Sudomain (Mid Price Plan). e.g. you.thedata.place</label>
+    <input type="text" name="subdomain">
+            <label for="domain">Your Domain (Heavy Price Plan). You must already own this.</label>
+    <input type="text" name="domain">
     <label for="paymentmethod">Payment Method</label>
     <select name="paymentmethod">
   <option value="notapplicable">Not Applicable</option>
