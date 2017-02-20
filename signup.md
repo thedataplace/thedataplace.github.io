@@ -21,7 +21,7 @@ We can get you up and running with your own data store in under 48 hours. Just c
         <label for="subdomain">Preferred Sudomain (Mid Price Plan). e.g. you.thedata.place</label>
     <input type="text" name="subdomain">
             <label for="domain">Your Domain (Heavy Price Plan). You must already own this.</label>
-    <input type="text" name="subdomain">
+    <input type="text" name="domain">
     <label for="priceplan">Price Plan</label>
     <select name="priceplan">
   <option value="free">Free</option>
