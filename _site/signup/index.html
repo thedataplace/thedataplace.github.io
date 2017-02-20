@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Contact – The Data Place – A better model for data stores.</title>
+    <title>Sign Up – The Data Place – A better model for data stores.</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -15,8 +15,8 @@
     <meta name="author" content="The Data Place" />
 
     
-    <meta property="og:title" content="Contact" />
-    <meta property="twitter:title" content="Contact" />
+    <meta property="og:title" content="Sign Up" />
+    <meta property="twitter:title" content="Sign Up" />
     
 
     <!--[if lt IE 9]>
@@ -50,19 +50,40 @@
         <div class="container">
       <article class="page">
 
-  <h1>Contact</h1>
+  <h1>Sign Up</h1>
 
   <div class="entry">
-    <p>You can send us a message using the form below and we’ll get back to you as soon as possible. For more general chat and to find out what we’re really like you can say hello on <a href="https://twitter.com/thedataplace">Twitter</a>. For general updates and useful links you can join <a href="http://eepurl.com/czoUJv">our mailing list</a>.</p>
+    <p>We can get you up and running with your own data store in under 48 hours. Just choose a price plan, fill out the form below and we’ll be back in touch with your login details and chosen payment method.</p>
 
-<h2 id="send-us-a-message">Send Us a Message</h2>
+<h2 id="your-details">Your Details</h2>
 
 <form action="https://formspree.io/mistergough@gmail.com" method="POST">
     <label for="name">Name</label>
     <input type="text" name="name" />
+    <label for="organisation">Organisation</label>
+    <input type="text" name="organisation" />
     <label for="_replyto">Email</label>
     <input type="email" name="_replyto" />
-    <label for="message">Message</label>
+    <label for="username">Preferred Username</label>
+    <input type="text" name="username" />
+        <label for="subdomain">Preferred Sudomain (Mid Price Plan). e.g. you.thedata.place</label>
+    <input type="text" name="subdomain" />
+            <label for="domain">Your Domain (Heavy Price Plan). You must already own this.</label>
+    <input type="text" name="subdomain" />
+    <label for="priceplan">Price Plan</label>
+    <select name="priceplan">
+  <option value="free">Free</option>
+  <option value="basic">Basic</option>
+  <option value="mid">Mid</option>
+  <option value="heavy">Heavy</option>
+</select>
+    <label for="paymentmethod">Payment Method</label>
+    <select name="paymentmethod">
+  <option value="cardmonthly">Card/Monthly</option>
+  <option value="cardannual">Card/Annual</option>
+  <option value="purchaseorder">Purchase Order</option>
+</select>
+    <label for="message">Optional Message</label>
     <textarea name="message"></textarea>
     <input class="button" type="submit" value="Send" />
 </form>
@@ -108,8 +129,8 @@
 
 		ga('create', 'UA-92092246-1', 'auto');
 		ga('send', 'pageview', {
-		  'page': '/contact/',
-		  'title': 'Contact'
+		  'page': '/signup/',
+		  'title': 'Sign Up'
 		});
 	</script>
 	<!-- End Google Analytics -->

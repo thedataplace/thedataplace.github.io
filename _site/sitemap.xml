@@ -20,6 +20,9 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/signup/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/downloads/sponsorathingscamp.pdf</loc>
 <lastmod>2017-02-11T13:15:22+01:00</lastmod>
 </url>

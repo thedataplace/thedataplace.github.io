@@ -111,7 +111,9 @@ img {
     color: #000;
 }
 .wrapper-highlight {
-    background: #4fd5d6;
+    background: #0d6887;
+    font-weight: 300;
+    color: #fff;
 }
 .container {
     margin: 0 auto;
@@ -159,7 +161,7 @@ nav {
   margin-top: 1em;
   font-size: 1em;
     padding: 0.2em 0.5em 0.2em 0;
-    background: #00CBCC;
+    background: #169385;
     border: 1px solid #fff;
 
   @include mobile {
@@ -196,6 +198,7 @@ nav {
 .strapline p {
     font-family: Rubik;
     font-size: 2em;
+    font-weight: 300;
     color: #fff;
     text-align: center;
     
@@ -252,6 +255,9 @@ nav {
         width: 100%;
     }
 }
+.easy p, .affordable p, .scalable p {
+    font-size: 1.2em;
+}
 .easy {
     margin: 0 auto;
     padding: 100px 424px 0 0;
@@ -263,7 +269,7 @@ nav {
     margin: 0 auto;
     padding: 100px 0 0 424px;
     width: 70%;
-    background: #4fd5d6 url(./images/mockpage.svg) bottom left no-repeat;
+    background: url(./images/mockpage.svg) bottom left no-repeat;
     height: 411px;
 }
 .scalable {
@@ -311,6 +317,13 @@ nav {
 .entry p {
     font-size: 1.2em;
 }
+.entry ul {
+    margin: 1em 0;
+    list-style: disc outside;
+}
+.entry ul li {
+    font-size: 1.2em;
+}
 .post {
   .comments {
     margin-top: 1em;
@@ -325,7 +338,7 @@ nav {
     margin: 0 auto;
     max-width: 640px;
 }
-.entry form input {
+.entry form input, .entry form select {
     width: 100%;
     font-size: 1em;
     padding: 0.5em;
