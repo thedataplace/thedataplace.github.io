@@ -61,10 +61,14 @@ table {
 /**************/
 html {
   font-size: 100%;
+  background: url(./images/library.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-  background: #fff;
   font: 1.1em/1.5 "Source Sans Pro";
   font-weight: 400;
   color: #000;
@@ -172,12 +176,12 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 .wrapper {
-  background: none;
+  background: #fff;
   color: #000;
 }
 
 .wrapper-highlight {
-  background: #0d6887;
+  background: none;
   font-weight: 300;
   color: #fff;
 }
@@ -235,8 +239,8 @@ nav {
 }
 @media screen and (max-width: 860px) {
   nav {
-    float: none;
-    margin-top: 9px;
+    float: left;
+    margin-top: 2em;
     display: block;
     font-size: 16px;
   }
@@ -250,11 +254,6 @@ nav a {
   font-size: 0.9em;
   text-transform: uppercase;
   text-decoration: none;
-}
-@media screen and (max-width: 860px) {
-  nav a {
-    margin: 0;
-  }
 }
 
 .strapline {
@@ -273,6 +272,7 @@ nav a {
 @media screen and (max-width: 860px) {
   .strapline p {
     font-size: 1.4em;
+    text-align: left;
   }
 }
 
@@ -297,11 +297,25 @@ nav a {
   font-size: 2em;
   padding-top: 2em;
 }
+@media screen and (max-width: 860px) {
+  .pricingheader h2 {
+    text-align: left;
+  }
+}
 
 .pricingheader p {
   text-align: center;
   font-size: 1.2em;
   margin-bottom: 2em;
+}
+@media screen and (max-width: 860px) {
+  .pricingheader p {
+    text-align: left;
+  }
+}
+
+.pricingheader p a {
+  color: #fff;
 }
 
 .wrapper-form {
@@ -333,32 +347,37 @@ nav a {
   font-size: 1.2em;
 }
 
+.easy i, .scalable i {
+  float: right;
+  margin-left: 1em;
+}
+
+.affordable i {
+  float: left;
+  color: #fff;
+  margin-right: 1em;
+}
+
 .easy {
   margin: 0 auto;
-  padding: 100px 424px 0 0;
+  padding: 7em 0;
   width: 70%;
-  background: url(./images/mockpage.svg) bottom right no-repeat;
-  height: 411px;
 }
 
 .affordable {
   margin: 0 auto;
-  padding: 100px 0 0 424px;
+  padding: 7em 0;
   width: 70%;
-  background: url(./images/mockpage.svg) bottom left no-repeat;
-  height: 411px;
 }
 
 .scalable {
   margin: 0 auto;
-  padding: 100px 424px 0 0;
+  padding: 7em 0;
   width: 70%;
-  background: url(./images/mockpage.svg) bottom right no-repeat;
-  height: 411px;
 }
 
 .fourcolumn {
-  background: #00CBCC;
+  background: #169385;
   border: none;
   padding: 1em 1.2em;
   margin: 0 1%;
@@ -374,7 +393,7 @@ nav a {
 }
 
 #main {
-  padding: 3em 0;
+  padding: 5em 0;
 }
 
 .posts > .post {
@@ -441,10 +460,27 @@ footer {
   color: #fff;
 }
 
+footer .threecolumn {
+  padding: 0;
+  width: 33.33%;
+  float: left;
+}
+@media screen and (max-width: 860px) {
+  footer .threecolumn {
+    padding: 0;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+}
+
 footer ul, footer li {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+footer a {
+  color: #fff;
 }
 
 #mc_embed_signup {

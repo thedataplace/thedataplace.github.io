@@ -46,14 +46,14 @@
         </header>
     </div>
 
-    <div id="main">
+    <div id="main" class="wrapper">
         <div class="container">
       <article class="page">
 
   <h1>Sign Up</h1>
 
   <div class="entry">
-    <p>We can get you up and running with your own data store in under 48 hours. Just choose a price plan, fill out the form below and we’ll be back in touch with your login details and chosen payment method.</p>
+    <p>We can get you up and running with your own data store in just a few days. Just choose a price plan, fill out the form below and we’ll be back in touch with your login details and chosen payment method.</p>
 
 <h2 id="your-details">Your Details</h2>
 
@@ -64,12 +64,6 @@
     <input type="text" name="organisation" />
     <label for="_replyto">Email</label>
     <input type="email" name="_replyto" />
-    <label for="username">Preferred Username</label>
-    <input type="text" name="username" />
-        <label for="subdomain">Preferred Sudomain (Mid Price Plan). e.g. you.thedata.place</label>
-    <input type="text" name="subdomain" />
-            <label for="domain">Your Domain (Heavy Price Plan). You must already own this.</label>
-    <input type="text" name="subdomain" />
     <label for="priceplan">Price Plan</label>
     <select name="priceplan">
   <option value="free">Free</option>
@@ -77,8 +71,13 @@
   <option value="mid">Mid</option>
   <option value="heavy">Heavy</option>
 </select>
+        <label for="subdomain">Preferred Sudomain (Mid Price Plan). e.g. you.thedata.place</label>
+    <input type="text" name="subdomain" />
+            <label for="domain">Your Domain (Heavy Price Plan). You must already own this.</label>
+    <input type="text" name="domain" />
     <label for="paymentmethod">Payment Method</label>
     <select name="paymentmethod">
+  <option value="notapplicable">Not Applicable</option>
   <option value="cardmonthly">Card/Monthly</option>
   <option value="cardannual">Card/Annual</option>
   <option value="purchaseorder">Purchase Order</option>
