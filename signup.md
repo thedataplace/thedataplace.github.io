@@ -4,7 +4,7 @@ title: Sign Up
 permalink: /signup/
 ---
 
-We can get you up and running with your own data store in under 48 hours. Just choose a price plan, fill out the form below and we'll be back in touch with your login details and chosen payment method.
+We can get you up and running with your own data store in just a few days. Just choose a price plan, fill out the form below and we'll be back in touch with your login details and chosen payment method.
 
 ## Your Details
 
