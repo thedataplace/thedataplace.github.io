@@ -120,6 +120,9 @@ img {
     font-weight: 300;
     color: #fff;
 }
+.wrapper-strip {
+    background: #169385;
+}
 .backgroundimg {
 }
 .container {
@@ -249,19 +252,38 @@ nav {
 .pricingheader p a {
     color: #fff;
 }
-.wrapper-form {
-    background: #D0051C;
-}
 .mailing-list {
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 2em 0 1em 0;
     width: 80%;
     max-width: 640px;
     color: #fff;
 }
+.mailing-list label {
+    padding-bottom: 1em;
+}
+.mailing-list input {
+    border: none;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1.2em;
+    width: 75%;
+    float: left;
+}
+.mailing-list input.button {
+    background: #000;
+    color: #fff;
+    float: right;
+    width: 25%;
+}
+form .mailing-list #mce-responses, form .mailing-list div.mce_inline_error, form .mailing-list #mce-error-response {
+    margin-top: 1em;
+    background: none;
+    font-weight: 300;
+}
 .threecolumn {
-    padding: 0;
-    width: 80%;
+    padding: 0 1em;
+    width: 33.33%;
     float: left;
     
     @include mobile {
@@ -270,37 +292,15 @@ nav {
         width: 100%;
     }
 }
-.easy p, .affordable p, .scalable p {
-    font-size: 1.2em;
-}
-.easy i, .scalable i {
-    float: right;
-    margin-left: 1em;
-}
-.affordable i {
-    float: left;
-    color: #fff;
-    margin-right: 1em;
-}
-.easy {
+.values {
+    width: 80%;
     margin: 0 auto;
-    padding: 7em 0;
-    width: 70%;
-}
-.affordable {
-    margin: 0 auto;
-    padding: 7em 0;
-    width: 70%;
-}
-.scalable {
-    margin: 0 auto;
-    padding: 7em 0;
-    width: 70%;
+    padding: 5em 0;
 }
 .fourcolumn {
     background: #169385;
     border: none;
-    padding: 1em 1.2em;
+    padding: 0;
     margin: 0 1%;
     width: 23%;
     float: left;
@@ -312,6 +312,7 @@ nav {
     }
 }
 .fourcolumn h2 {
+    font-size: 1.4em;
 }
 .image-section img {
 }
