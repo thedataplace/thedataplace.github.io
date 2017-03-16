@@ -8,7 +8,7 @@ We can get you up and running with your own data store in just a few days. Just 
 
 ## Your Details
 
-<form action="https://formspree.io/mistergough@gmail.com"
+<form action="https://formspree.io/martin@datahatch.co.uk"
       method="POST">
     <label for="name">Name</label>
     <input type="text" name="name">
