@@ -283,12 +283,13 @@ form .mailing-list #mce-responses, form .mailing-list div.mce_inline_error, form
 }
 .threecolumn {
     padding: 0 1em;
-    width: 33.33%;
+    margin: 0 2%;
+    width: 29%;
     float: left;
     
     @include mobile {
         padding: 0;
-        margin-bottom: 1em;
+        margin: 0 0 1em 0;
         width: 100%;
     }
 }
@@ -301,13 +302,13 @@ form .mailing-list #mce-responses, form .mailing-list div.mce_inline_error, form
     background: #169385;
     border: none;
     padding: 0;
-    margin: 0 1%;
-    width: 23%;
+    margin: 0 2%;
+    width: 21%;
     float: left;
     color: #fff;
     
     @include mobile {
-        margin-bottom: 1em;
+        margin: 0 0 1em 0;
         width: 100%;
     }
 }
@@ -381,17 +382,6 @@ footer {
     padding: 3em 0;
     width: 80%;
     color: #fff;
-}
-footer .threecolumn {
-    padding: 0;
-    width: 33.33%;
-    float: left;
-    
-    @include mobile {
-        padding: 0;
-        margin-bottom: 1em;
-        width: 100%;
-    }
 }
 footer ul, footer li {
     list-style: none;
