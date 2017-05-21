@@ -15,8 +15,12 @@
 
 html {
     font-size: 100%;
-    background: url(images/Rectangle.png) repeat-y;
-    background-size: 100% auto;
+        background: url(./images/library.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
 }
 
 body {
@@ -27,6 +31,7 @@ body {
 h1, h2, h3, h4 {
     font-family: Rubik;
     font-weight: 400;
+    text-transform: uppercase;
     line-height: 1.5;
     margin: 0.05em 0;
     padding: 0;
@@ -35,7 +40,7 @@ h1, h2, h3, h4 {
   }
 }
 .wrapper-highlight h1, .wrapper-highlight h2, .wrapper-highlight h3,.wrapper-highlight h4, {
-    font-weight: 400;
+    font-weight: 300;
 }
 h1 {
   font-size: 2.2em;
@@ -117,7 +122,7 @@ img {
     color: #fff;
 }
 .wrapper-strip {
-    background: none;
+    background: #169385;
 }
 .backgroundimg {
 }
@@ -143,6 +148,23 @@ img {
     float: none;
     display: block;
     margin: 0 auto;
+  }
+}
+.site-name {
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+.site-description {
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: 16px;
+
+  @include mobile {
+    margin: 3px 0;
   }
 }
 nav {
