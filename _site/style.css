@@ -66,14 +66,14 @@ html {
 }
 
 body {
-  font: 1.1em/1.5 Lato;
-  font-weight: 300;
+  font: 1.1em/1.5 Rubik;
+  font-weight: 400;
   color: #000;
 }
 
 h1, h2, h3, h4 {
-  font-family: Rubik;
   font-weight: 400;
+  color: #1AC0B8;
   line-height: 1.5;
   margin: 0.05em 0;
   padding: 0;
@@ -82,6 +82,10 @@ h1, h2, h3, h4 {
   h1, h2, h3, h4 {
     line-height: 1.2;
   }
+}
+
+h1.darker, h2.darker, h3.darker, h4.darker {
+  color: #1A66B8;
 }
 
 .wrapper-highlight h1, .wrapper-highlight h2, .wrapper-highlight h3, .wrapper-highlight h4 {
@@ -96,7 +100,8 @@ h1 a {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.4em;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -112,12 +117,31 @@ p {
   margin: 0 0 1em 0;
 }
 
+p.pricing-intro {
+  font-size: 1.8em;
+  padding: 8% 2% 2% 2%;
+}
+
 a {
   color: #000;
   text-decoration: underline;
   cursor: pointer;
 }
 a:hover, a:active {
+  text-decoration: none;
+}
+
+.pricing a {
+  background: #fff;
+  padding: 0.2em 0.4em;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.pricing a:hover, .pricing a:active {
   text-decoration: none;
 }
 
@@ -173,6 +197,18 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 .wrapper {
+  background: url(images/P1030452.jpg);
+  background-size: cover;
+  color: #000;
+}
+@media screen and (max-width: 860px) {
+  .wrapper {
+    background: #fff;
+  }
+}
+
+#main {
+  background: none;
   background: #fff;
   color: #000;
 }
@@ -210,13 +246,16 @@ img {
   }
 }
 
+.site-info a img {
+  width: 45%;
+}
+
 nav {
   float: right;
   margin-top: 1em;
   font-size: 1em;
-  padding: 0.2em 0.5em 0.2em 0;
-  background: #169385;
-  border: 1px solid #fff;
+  padding: 0.2em 0.7em 0.2em 0.2em;
+  background: #fff;
 }
 @media screen and (max-width: 860px) {
   nav {
@@ -228,10 +267,10 @@ nav {
 }
 nav a {
   margin-left: 0.5em;
-  color: #fff;
+  color: #000;
   text-align: right;
   font-family: Rubik;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.9em;
   text-transform: uppercase;
   text-decoration: none;
@@ -239,7 +278,7 @@ nav a {
 
 .strapline {
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 0;
   width: 80%;
 }
 
@@ -263,40 +302,18 @@ nav a {
 
 .features {
   margin: 0 auto;
-  padding-top: 5em;
+  padding-top: 2em;
   width: 100%;
 }
 
 .pricing {
   margin: 0 auto;
-  padding-bottom: 5em;
+  padding-bottom: 8%;
   width: 80%;
 }
 
-.pricingheader h2 {
-  text-align: center;
-  font-size: 2em;
-  padding-top: 2em;
-}
-@media screen and (max-width: 860px) {
-  .pricingheader h2 {
-    text-align: left;
-  }
-}
-
-.pricingheader p {
-  text-align: center;
-  font-size: 1.2em;
-  margin-bottom: 2em;
-}
-@media screen and (max-width: 860px) {
-  .pricingheader p {
-    text-align: left;
-  }
-}
-
-.pricingheader p a {
-  color: #fff;
+li.price {
+  text-transform: uppercase;
 }
 
 .mailing-list {
@@ -315,7 +332,7 @@ nav a {
   border: none;
   margin-bottom: 1em;
   padding: 0.5em;
-  font-size: 1em;
+  font-size: 1.2em;
   width: 75%;
   float: left;
 }
@@ -334,23 +351,25 @@ form .mailing-list #mce-responses, form .mailing-list div.mce_inline_error, form
 }
 
 .threecolumn {
-  padding: 0 1em;
+  padding: 1em 2em;
   margin: 0 2%;
   width: 29%;
   float: left;
+  background: #fff;
+  border: 3px #000 solid;
 }
 @media screen and (max-width: 860px) {
   .threecolumn {
     padding: 0;
-    margin: 0 0 1em 0;
     width: 100%;
+    border: none;
   }
 }
 
 .values {
   width: 80%;
   margin: 0 auto;
-  padding: 5em 0;
+  padding: 2em 0;
 }
 
 .fourcolumn {
@@ -438,6 +457,10 @@ footer {
   padding: 3em 0;
   width: 80%;
   color: #fff;
+}
+
+footer h3 {
+  color: #1AC0B8;
 }
 
 footer ul, footer li {
