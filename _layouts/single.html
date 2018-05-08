@@ -1,17 +1,10 @@
 <!DOCTYPE html>
+
 <html>
+    
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-      <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,900" rel="stylesheet">
+      
+    {% include dochead.html %}
 
   </head>
 
@@ -28,5 +21,7 @@
     {% include footer.html %}
 
     {% include analytics.html %}
+      
   </body>
+    
 </html>

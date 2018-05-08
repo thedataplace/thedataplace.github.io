@@ -20,12 +20,13 @@ html {
 }
 
 body {
-    font: 1.1em/1.5 Rubik;
-    font-weight: 400;
+    font: 1.1em/1.5 "Source Sans Pro";
+    font-weight: 500;
     color: #000;
 }
 h1, h2, h3, h4 {
-    font-weight: 400;
+    font-weight: 300;
+    font-family: Rubik;
     color: #1AC0B8;
     line-height: 1.5;
     margin: 0.05em 0;
@@ -143,7 +144,7 @@ img {
 }
 .wrapper-highlight {
     background: none;
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
 }
 .wrapper-strip {
@@ -188,6 +189,7 @@ nav {
     margin-top: 2em;
     display: block;
     font-size: 16px;
+    width: 100%;
   }
   a {
       margin-left: 0.5em;
@@ -260,12 +262,22 @@ li.price {
     font-size: 1.2em;
     width: 60%;
     float: left;
+    
+    @include mobile {
+    width: 100%;
+  }
 }
 .mailing-list input.button {
     background: #000;
     color: #fff;
     float: right;
     width: 40%;
+    
+    @include mobile {
+    float: left;
+    margin-top: 0.25em;
+    width: 100%;
+  }
 }
 form .mailing-list #mce-responses, form .mailing-list div.mce_inline_error, form .mailing-list #mce-error-response {
     margin-top: 1em;
