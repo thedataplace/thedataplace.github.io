@@ -14,13 +14,15 @@
 /**************/
 
 html {
-    font-size: 100%;
-    background: url(images/Rectangle.png) repeat-y;
-    background-size: 100% auto;
+  background: url(images/bookstalls.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-    font: 1.1em/1.5 "Source Sans Pro";
+    font: 1.1em/1.5 "IBM Plex Serif";
     font-weight: 500;
     color: #000;
 }
@@ -142,8 +144,13 @@ img {
     background: #fff;
     color: #000;
 }
-.wrapper-highlight {
+.wrapper-clear {
     background: none;
+}
+.wrapper-highlight {
+    font-size: 100%;
+    background: url(images/Rectangle.png) repeat-y;
+    background-size: 100% auto;
     font-weight: 400;
     color: #fff;
 }
@@ -214,7 +221,7 @@ nav {
 }
 .strapline p {
     font-family: Rubik;
-    font-size: 2em;
+    font-size: 2.4em;
     font-weight: 300;
     color: #fff;
     text-align: center;
