@@ -237,14 +237,7 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 .wrapper {
-  background: url(images/P1030452.jpg);
-  background-size: cover;
-  color: #000;
-}
-@media screen and (max-width: 860px) {
-  .wrapper {
-    background: #fff;
-  }
+  background: #fff;
 }
 
 #main {
@@ -439,12 +432,9 @@ form .mailing-list #mce-responses, form .mailing-list div.mce_inline_error, form
 }
 
 .threecolumn {
-  padding: 1em 2em;
-  margin: 0 2%;
+  margin: 0 1%;
   width: 29%;
   float: left;
-  background: #fff;
-  border: 3px #000 solid;
 }
 @media screen and (max-width: 860px) {
   .threecolumn {

@@ -164,12 +164,7 @@ img {
 /*********************/
 
 .wrapper {
-    background: url(images/P1030452.jpg);
-    background-size: cover;
-    color: #000;
-      @include mobile {
     background: #fff;
-  }
 }
 #main {
     background: none;
@@ -349,12 +344,9 @@ form .mailing-list #mce-responses, form .mailing-list div.mce_inline_error, form
     font-weight: 300;
 }
 .threecolumn {
-    padding: 1em 2em;
-    margin: 0 2%;
+    margin: 0 1%;
     width: 29%;
     float: left;
-    background: #fff;
-    border: 3px #000 solid;
     
     @include mobile {
         padding: 0;
