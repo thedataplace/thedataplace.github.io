@@ -63,15 +63,12 @@ h4 {
 p {
   margin: 0 0 1em 0;
 }
-p.pricing-intro {
+p.page-intro {
     font-size: 1.8em;
     padding: 8% 2% 2% 2%;
-}
-p.services-intro {
-    font-size: 1.8em;
     text-align: center;
 }
-p.services-intro a {
+p.page-intro a {
     display: inline-block;
     font-family: "Rubik";
     font-size: 0.7em;
@@ -185,7 +182,6 @@ img {
     background: none;
 }
 .wrapper-highlight {
-    font-size: 100%;
     background: url(images/Rectangle.png) repeat-y;
     background-size: 100% auto;
     font-weight: 400;
@@ -219,6 +215,11 @@ img {
     margin: 0 auto;
     max-width: 860px;
     width: 80%;
+}
+.wide-container, .wide-container-left-align, .wide-container-right-align {
+    margin: 0 auto;
+    width: 80%;
+    padding: 6em 0;
 }
 
 //
@@ -306,11 +307,6 @@ nav {
     margin: 0 auto;
     padding-bottom: 8%;
     width: 80%;
-}
-.wide-container, .wide-container-left-align, .wide-container-right-align {
-    margin: 0 auto;
-    width: 80%;
-    padding: 6em 0;
 }
 li.price {
     text-transform: uppercase;
