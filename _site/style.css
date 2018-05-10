@@ -143,30 +143,29 @@ p.services-intro a {
   color: #1AC0B8;
 }
 
-.wrapper-services-design p {
+.wide-container-left-align h2 {
+  min-width: 600px;
+  font-size: 1.8em;
+}
+
+.wide-container-left-align p {
   max-width: 600px;
   font-size: 1.8em;
   color: #fff;
 }
 
-.wrapper-services-science p {
+.wide-container-right-align h2 {
+  min-width: 600px;
+  font-size: 1.8em;
+  float: right;
+}
+
+.wide-container-right-align p {
   max-width: 600px;
   font-size: 1.8em;
   color: #fff;
   float: right;
   clear: both;
-}
-
-.wrapper-services-skills p {
-  max-width: 600px;
-  font-size: 1.8em;
-  color: #fff;
-}
-
-.wrapper-services-science h2 {
-  min-width: 600px;
-  font-size: 1.8em;
-  float: right;
 }
 
 a {
@@ -390,7 +389,7 @@ nav a {
   width: 80%;
 }
 
-.wide-container {
+.wide-container, .wide-container-left-align, .wide-container-right-align {
   margin: 0 auto;
   width: 80%;
   padding: 6em 0;
