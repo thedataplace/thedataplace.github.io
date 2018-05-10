@@ -109,7 +109,6 @@ h2 {
 
 h3 {
   font-size: 1.2em;
-  color: #fff;
 }
 
 h4 {
@@ -122,7 +121,6 @@ p {
 
 p.page-intro {
   font-size: 1.8em;
-  padding: 8% 2% 2% 2%;
   text-align: center;
 }
 
@@ -146,7 +144,7 @@ p.page-intro a {
 
 .wide-container-left-align p {
   max-width: 600px;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #fff;
 }
 
@@ -158,7 +156,7 @@ p.page-intro a {
 
 .wide-container-right-align p {
   max-width: 600px;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #fff;
   float: right;
   clear: both;
