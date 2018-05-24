@@ -14,7 +14,7 @@
 /**************/
 
 html {
-  background: url(images/bookstalls.jpg) no-repeat center center fixed; 
+  background: url(images/bookstalls.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -54,7 +54,7 @@ h2 {
     text-transform: uppercase;
 }
 h3 {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 h4 {
     font-size: 1.1em;
@@ -79,25 +79,19 @@ p.page-intro a {
     color: #1AC0B8;
 }
 .wide-container-left-align h2 {
-    min-width: 600px;
     font-size: 1.8em;
 }
 .wide-container-left-align p {
-    max-width: 600px;
     font-size: 1.4em;
     color: #fff;
 }
 .wide-container-right-align h2 {
-    min-width: 600px;
     font-size: 1.8em;
-    float: right;
+    color: #1A66B8;
 }
 .wide-container-right-align p {
-    max-width: 600px;
     font-size: 1.4em;
     color: #fff;
-    float: right;
-    clear: both;
 }
 a {
     color: #000;
@@ -193,22 +187,43 @@ img {
 .wrapper-strip {
     background: none;
 }
-.wrapper-services-design {
+.wrapper-services-basics {
+  background: url(images/basics.jpg) no-repeat bottom right; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.wrapper-services-solutions {
+  background: url(images/solutions.jpg) no-repeat top center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.wrapper-services-collaboration {
   background: url(images/legoworkshop.png) no-repeat top center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.wrapper-services-science {
-  background: url(images/legoworkshop.png) no-repeat top center; 
+.wrapper-services-infrastructure {
+  background: url(images/infrastructure.jpg) no-repeat center left; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.wrapper-services-skills {
-  background: url(images/legoworkshop.png) no-repeat top center; 
+.wrapper-services-impact {
+  background: url(images/impact.jpg) no-repeat top center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.wrapper-platform-stories {
+  background: url(images/legoworkshop.jpg) no-repeat center right; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -223,6 +238,18 @@ img {
     margin: 0 auto;
     width: 80%;
     padding: 6em 0;
+}
+.wide-container-left-align {
+    padding: 6em 18em 6em 0;
+    @include mobile {
+    padding: 6em 0;
+  }
+}
+.wide-container-right-align {
+    padding: 6em 0 6em 18em;
+    @include mobile {
+    padding: 6em 0;
+  }
 }
 
 //
@@ -251,7 +278,7 @@ nav {
   margin-top: 1em;
   font-size: 1em;
     padding: 0.2em 0.7em 0.2em 0.2em;
-    background: #fff;
+    background: none;
 
   @include mobile {
     float: left;
@@ -262,7 +289,7 @@ nav {
   }
   a {
       margin-left: 0.5em;
-      color: #000;
+      color: #fff;
       text-align: right;
       font-family: Rubik;
       font-weight: 400;

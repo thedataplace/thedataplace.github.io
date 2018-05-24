@@ -9,17 +9,16 @@ serving as organisers and trainers with the Open Data Institute Devon Node, runn
 <h3>Martin Howitt</h3>
 
 With a solid background as a technical lead, project manager, enterprise architect and
-architecture team leader at Devon County Council and Bristol City Council, our technology lead and co-founder Martin has the depth and breadth of technical experience to understand all the things it takes to enable open data release from proprietary systems, as well as solid experience managing and delivering technology projects. For this project Martin will provide assurance that solutions are aligned to LORIC priorities, and will support data architecture, prototyping and data release activities, providing technical advice to client organisations to help them publish data more easily.
+architecture team leader at Devon County Council and Bristol City Council, our technology lead and co-founder Martin has the depth and breadth of technical experience to understand all the things it takes to enable open data release from proprietary systems, as well as solid experience managing and delivering technology projects.
 
 <h3>Lucy Knight</h3>
 
 Our Data Lead and co-founder Lucy is an ODI Registered Trainer, a co-founder of ODI
-Devon and Data Lead at Devon County Council. With over 20 years experience including production monitoring in the telecommunications industry, database management, performance reporting, data analysis and visualisation, and open data publication, she has built up significant expertise across all aspects of managing data and applying the range of skills to problem-solving. Lucy’s particular specialism is engaging new audiences with data concepts through video games, hobby electronics and visual arts, and in strengthening communication between technical and non-technical audiences. 
+Devon and Data Lead at Devon County Council. With over 20 years experience including production monitoring in the telecommunications industry, database management, performance reporting, data analysis and visualisation, and open data publication, she has built up significant expertise across all aspects of managing data and applying the range of skills to problem-solving.
 
 <h3>Simon Gough</h3>
 
-Our Design Lead Simon is an experienced service designer and facilitator. As Director of Redfront he’s led user research, prototyping and innovation workshops for Government
-Digital Service, the Food Standards Agency, Department for International Trade, DCMS, the Met Office and many others. For the past five years he’s specialised in bringing together data and design through new tools and approaches; in addition to applying these methods to client work he’s also presented them as part of Service Design in Government and ODI Futures at Arup. Simon is an ODI Registered Trainer and a course tutor for Ravensbourne’s MDes where he leads the service design pathway. For the past three years he has been developing the curriculum to include transition design, systems thinking and economics for design.
+Our Design Lead, Simon, is an experienced service designer and facilitator. As Director of Redfront he’s led user research, prototyping and innovation workshops for Government Digital Service, the Food Standards Agency, Department for International Trade, DCMS, the Met Office and many others. For the past five years he’s specialised in bringing together data and design through new tools and approaches. Simon is an ODI Registered Trainer and a course tutor for Ravensbourne’s MDes where he leads the service design pathway.
 
 <h3>Chris Hunt</h3>
 
