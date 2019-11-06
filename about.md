@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-The Data Place is a social enterprise with a mission to provide data services, infrastructure and tools that: support communities through open access to critical data; foster a more collaborative and growing data ecosystem; and provide the means for organisations to better serve themselves and their stakeholders.
+The Data Place is a social enterprise with a mission to provide data services, infrastructure and tools that: support communities through open access to critical data; foster a more collaborative, growing data ecosystem; and provide the means for organisations to better serve themselves and their stakeholders.
 
 Overall we believe that finding, publishing and using open data needs to be easier, more collaborative and offer a much better return on investment for individuals, organisations, communities and the planet as a whole.
 
