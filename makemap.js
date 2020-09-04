@@ -181,3 +181,18 @@ function makemap() {
 }
 
 makemap();
+
+// make responsive
+function debounce(func){
+  var timer;
+  return function(event){
+    if(timer) clearTimeout(timer);
+    timer = setTimeout(func,100,event);
+  };
+}
+
+// redraw elements once resize is done
+window.addEventListener("resize",debounce(function(e){
+  //console.log("end of resizing");
+  makemap();
+}));
