@@ -17,8 +17,9 @@ function makemap() {
          lat: unpack(rowsFiltered, 'latitude'),
          lon: unpack(rowsFiltered, 'longitude'),
          text: unpack(rowsFiltered, 'CounterID'),
+         mode: 'markers',
          marker: {
-           color: 'green',
+           color: '#DB586B' /*'#8F2E0E'*/,
            opacity: 0.8,
            size: unpack(rowsFiltered, 'triggers'),
            sizemode: 'area',
@@ -143,7 +144,12 @@ function makemap() {
             console.log( 'allcounters', 'X',x, 'Y',y );
             var allcounters = [{
               x: x,
-              y: y
+              y: y,
+              mode: 'lines',
+              line: {
+                color: '#42DBB7',
+                width: 3
+              },
             }];
 
             // draw the starting chart
@@ -166,32 +172,39 @@ function makemap() {
                 console.log( 'counter', infotext, 'X',x, 'Y',y );
                 var traces = [{
                   x: x,
-                  y: y
+                  y: y,
+                  mode: 'lines',
+                  line: {
+                    color: '#42DBB7',
+                    width: 3
+                  },
                 }];
 
                 // draw the new chart
-                Plotly.newPlot('chartDiv', traces, layout, 0);
+                Plotly.newPlot('chartDiv', traces, layout);
 
           });
           }
 
       makeplot();
 
+
+
   });
 }
 
 makemap();
+
 
 // make responsive
 function debounce(func){
   var timer;
   return function(event){
     if(timer) clearTimeout(timer);
-    timer = setTimeout(func,100,event);
+    timer = setTimeout(func,50,event);
   };
 }
 
-// redraw elements once resize is done
 window.addEventListener("resize",debounce(function(e){
   //console.log("end of resizing");
   makemap();
