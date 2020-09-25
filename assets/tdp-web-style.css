@@ -172,9 +172,9 @@ ul {
   margin: 10px;
 	padding: 10px;
   text-align: left;
-  border-style: solid;
+  /*border-style: solid;
   border-width: thin;
-  border-color: var(--outline);
+  border-color: var(--fade);*/
 }
 
 .flex-container .invisbox-small {
