@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/10-header.css">
+  <link rel="stylesheet" href="assets/20-reset.css">
+  <link rel="stylesheet" href="assets/tdp-web-style.css">
+  <link rel="stylesheet" href="assets/markers.css">
+
+  <!-- Load plotly.js into the DOM -->
+  <script src="../plotly-2.12.1.js" charset="utf-8"></script>
+  <script src="../plotly-latest.js" charset="utf-8"></script>
+
+  <!-- MapBoxGL reqs and script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="./csv2geojson.js"></script>
+  <style>
+      body { margin:0; padding:0; }
+      #map { position:relative; top:0; bottom:0; width:50%; }
+      #graph { position:relative; top:0; bottom:0; width:50%; }
+  </style>
+  <style>
+  .mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  }
+}
+  </style>
+
+
+  <title>Network</title>
+</head>
+
+<body>
+
+
+
+    <div class="flex-container">
+      <h3>Networks</h3>
+    </div>
+    <div class="flex-container">
+      <div class="invisbox">
+      <p>
+        A key way that data can help natural spaces to flourish is by adding a layer of insight, and to this end
+        part of our role with the Green Minds project is to do with mapping networks of organisations, resources,
+        spaces and projects in different ways.
+      </p>
+
+    </div>
+
+    <div id="map"></div>
+
+  </div>
+
+
+
+</body>
+
+<!-- JS to make the map appear -->
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamFyZ29uYXV0IiwiYSI6ImNrZWUybmR5ZjBicWMyc295NTR4N3I4OWIifQ.scaKTg7g6zt8i9_zk8NjWg';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
+    center: [-4.171036, 50.376258], // starting position [lng, lat]
+    zoom: 11 // starting zoom
+});
+let hoveredStateId = null;
+
+// fetch the data
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: 'data/gwnFinal.csv',
+        dataType: "text",
+        success: function(csvData) {makeGeoJSON(csvData);}
+     });
+   });
+
+// make  geojson from the CSV file
+function makeGeoJSON(csvData) {
+  //console.log('data called:', csvData);
+  csv2geojson.csv2geojson(csvData, {
+    latfield: 'Latitude',
+    lonfield: 'Longitude',
+    delimiter: ','
+  }, function(err, data) {
+    map.on('load', function () {
+      //console.log('data called:', data);
+      // make the map
+      mapboxgl.accessToken = 'pk.eyJ1IjoiamFyZ29uYXV0IiwiYSI6ImNrZWUybmR5ZjBicWMyc295NTR4N3I4OWIifQ.scaKTg7g6zt8i9_zk8NjWg';
+      var map = new mapboxgl.Map({
+          container: 'map', // container id
+          //style: 'mapbox://styles/mapbox/satellite-v9',
+          style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
+          center: [-4.171036, 50.376258], // starting position [lng, lat]
+          zoom: 11 // starting zoom
+      });
+      // Add zoom and rotation controls to the map.
+      map.addControl(new mapboxgl.NavigationControl());
+      map.addControl(new mapboxgl.FullscreenControl());
+      // add markers to map
+      for (const feature of data.features) {
+        // create a HTML element for each feature
+        const el = document.createElement('div');
+        el.className = feature.properties.icon;
+        // make a marker for each feature and add it to the map
+        //console.log('coords;',feature.geometry.coordinates);
+        new mapboxgl.Marker(el, {offset: [0, -50/2]})
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 25 }) // add popups
+          .setHTML(
+            `<h4>${feature.properties.Title}</h4><p>${feature.properties.Description}</p>`
+          )
+        )
+        .addTo(map);
+      };
+      map.on('load', () => {
+            map.addSource('greenminds', {
+                type: 'geojson',
+                // Use a URL for the value for the `data` property.
+                data: data
+            });
+            map.addLayer({
+              'id': 'greenminds-layer',
+                'type': 'symbol',
+                'source': 'greenminds',
+              });
+            });
+          });
+        });
+      }
+</script>
+</html>

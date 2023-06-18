@@ -52,7 +52,7 @@ Plotly.d3.csv("https://www.nomisweb.co.uk/api/v01/dataset/NM_2002_1.data.csv?geo
             marker: {
                 size: 12,
                 opacity: 0.7,
-                color: '#42DBB7'
+                color: 'darkturquoise'
             }
         };
 

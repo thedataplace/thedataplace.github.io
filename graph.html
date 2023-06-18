@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/10-header.css">
+  <link rel="stylesheet" href="assets/20-reset.css">
+  <link rel="stylesheet" href="assets/tdp-web-style.css">
+  <link rel="stylesheet" href="assets/markers.css">
+
+  <!-- Load plotly.js into the DOM -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <!-- MapBoxGL reqs and script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="./csv2geojson.js"></script>
+  <style>
+      body { margin:0; padding:0; }
+      #graph { position:relative; top:0; bottom:0; width:50%; }
+  </style>
+
+  <title>Graph</title>
+</head>
+
+<body>
+
+    <div class="flex-container">
+      <h3>Concept mapping</h3>
+    </div>
+    <div class="flex-container">
+      <div class="invisbox">
+      <p>
+        Maps are usually associated with geography of course, but we also like them when they have a role in
+        helping us understand how concepts, organisations, places, and people can work together.
+      </p>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="col" id="graph" style="text-align:center;">
+      <select value="" id="filterInput">
+        <option value="All">Whole network</option>
+        <option value="n4">Green Minds Partnership</option>
+        <option value="n5">Future Parks Accelerator</option>
+        <option value="n7">Central Park</option>
+        <option value="n8">Derriford Park</option>
+      </select>
+      <br><br>
+      <svg width="650" height="650" style="border:1px solid black"></svg>
+    </div>
+  </div>
+  </body>
+
+<!-- JS to make the force graph -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+</script>
+
+<script src='makeGraphBright.js'></script>
+</html>

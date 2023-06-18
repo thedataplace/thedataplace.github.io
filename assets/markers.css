@@ -1,0 +1,68 @@
+/* Themes */
+
+.markerGardening {
+  background-image: url('../assets/markerGardening.svg');
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.markerBiodiversity {
+  background-image: url('../assets/markerBiodiversity.svg');
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+.markerArts {
+  background-image: url('../assets/markerArts.svg');
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+.markerMarine {
+  background-image: url('../assets/markerMarine.svg');
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+.markerFood {
+  background-image: url('../assets/markerFood.svg');
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+.markerInnovation {
+  background-image: url('../assets/markerInnovation.svg');
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+.markerHeritage {
+  background-image: url('../assets/markerHeritage.svg');
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.markerClimate {
+  background-image: url('../assets/markerClimate.svg');
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.markerOutdoors {
+  background-image: url('../assets/markerOutdoors.svg');
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}

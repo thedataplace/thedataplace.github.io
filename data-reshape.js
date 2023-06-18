@@ -1,5 +1,6 @@
 // WHERE"S THE DATA?
-var filepath = "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/845345/File_7_-_All_IoD2019_Scores__Ranks__Deciles_and_Population_Denominators_3.csv"
+var filepath = "../data/File_7_-_All_IoD2019_Scores__Ranks__Deciles_and_Population_Denominators_3.csv"
+//var filepath = "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/845345/File_7_-_All_IoD2019_Scores__Ranks__Deciles_and_Population_Denominators_3.csv"
 
 // READ IN THE DATA
 d3.csv(filepath).then(function(data) {
@@ -49,7 +50,8 @@ d3.csv(filepath).then(function(data) {
       mode: 'markers',
       text: decile,
       marker: {
-        color: '#42DBB7',
+        //color: '#42DBB7',
+        color: 'darkturquoise',
         opacity: 0.4,
         size: count,
         sizemode: 'area',

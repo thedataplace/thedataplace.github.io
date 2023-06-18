@@ -165,6 +165,14 @@ ul {
   flex-wrap: nowrap;
 }
 
+.flex-container-Y {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: var(--tdpYellow);
+  margin: 0;
+  padding: 0;
+}
+
 .flex-container .box {
   background-color: var(--bgbox);
   max-width: 50%;
@@ -298,4 +306,8 @@ tr:hover {background-color:var(--bghover);}
 caption {
   caption-side: bottom;
   padding: 10px
+}
+
+#map {
+  height: 500px;
 }
