@@ -8,20 +8,20 @@ districts = ['East Devon','Exeter','Mid Devon','North Devon','Plymouth','South H
 //agg = imdDevon.groupby(['geography_name']).median().reset_index()
 
 // BUILD THE CHART -------------------------------------------------------------
-Plotly.d3.csv("https://www.nomisweb.co.uk/api/v01/dataset/NM_2002_1.data.csv?geography=1820328235...1820328238,1820328230,1820328239,1820328240,1820328233,1820328241,1820328242&date=latest&gender=0&c_age=1,3...18,210&measures=20100&select=date_name,geography_name,geography_code,c_age_name,measures_name,obs_value,obs_status_name", function(err, rows){
+Plotly.d3.csv("https://www.nomisweb.co.uk/api/v01/dataset/NM_31_1.data.csv?geography=1778384973...1778384976,1778384922,1778384977,1778384978,1778384923,1778384979,1778384980&date=latest&sex=7&age=1...19&measures=20100", function(err, rows){
 
     function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
     }
 
     var allDistrictNames = unpack(rows, 'GEOGRAPHY_NAME'), //was allCountryNames
-        allAges = unpack(rows, 'C_AGE_NAME'), //was allYear
+        allAges = unpack(rows, 'AGE_NAME'), //was allYear
         allValue = unpack(rows, 'OBS_VALUE'), //was gdpPercap
         listofDistricts = [], //was listofCountries
         currentDistrict, //was currentCountry
         currentValue = [], //was currentGdp
         currentAge = []; //was currentYear
-
+    console.log(allAges);
     for (var i = 0; i < allDistrictNames.length; i++ ){
         if (listofDistricts.indexOf(allDistrictNames[i]) === -1 ){
             listofDistricts.push(allDistrictNames[i]);
